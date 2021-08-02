@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Arrivals</title>
+    <title>Product</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/icon.png">
     <script src="https://kit.fontawesome.com/9c091d119b.js" crossorigin="anonymous"></script>
@@ -58,61 +58,63 @@
                 </form>
             </div>
             <div class="header__right">
-                <div class="header__cart">
-                    <img src="images/cart.png" alt="cart">
-                    <div class="mega__menu">
-                        <div class="mega__item">
-                            <a href="#">
-                                <img src="images/cart-menu.jpg" alt="men">
-                            </a>
-                            <div class="mega__text">
+                <a href="#">
+                    <div class="header__cart">
+                        <img src="images/cart.png" alt="cart">
+                        <div class="mega__menu">
+                            <div class="mega__item">
                                 <a href="#">
-                                    <h5 class="mega__header-title">Rebox Zane</h5>
+                                    <img src="images/cart-menu.jpg" alt="men">
                                 </a>
-                                <div class="mega__star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                <div class="mega__text">
+                                    <a href="#">
+                                        <h5 class="mega__header-title">Rebox Zane</h5>
+                                    </a>
+                                    <div class="mega__star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="mega__price">1  x   $250</span>
                                 </div>
-                                <span class="mega__price">1  x   $250</span>
+                                <a href="#" class="cross__link">
+                                    <i class="fas fa-times-circle"></i>
+                                </a>
                             </div>
-                            <a href="#" class="cross__link">
-                                <i class="fas fa-times-circle"></i>
-                            </a>
-                        </div>
-                        <div class="mega__item">
-                            <a href="#">
-                                <img src="images/cart-menu2.jpg" alt="men">
-                            </a>
-                            <div class="mega__text">
+                            <div class="mega__item">
                                 <a href="#">
-                                    <h5 class="mega__header-title">Rebox Zane</h5>
+                                    <img src="images/cart-menu2.jpg" alt="men">
                                 </a>
-                                <div class="mega__star">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                <div class="mega__text">
+                                    <a href="#">
+                                        <h5 class="mega__header-title">Rebox Zane</h5>
+                                    </a>
+                                    <div class="mega__star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="mega__price">1  x   $250</span>
                                 </div>
-                                <span class="mega__price">1  x   $250</span>
+                                <a href="#" class="cross__link">
+                                    <i class="fas fa-times-circle"></i>
+                                </a>
                             </div>
-                            <a href="#" class="cross__link">
-                                <i class="fas fa-times-circle"></i>
-                            </a>
-                        </div>
-                        <div class="mega__box-price">
-                            <div class="text__price">
-                                <span class="mega__text-price">TOTAL</span>
-                                <span class="mega__text-price">$500.00</span>
+                            <div class="mega__box-price">
+                                <div class="text__price">
+                                    <span class="mega__text-price">TOTAL</span>
+                                    <span class="mega__text-price">$500.00</span>
+                                </div>
+                                <a href="#" class="cart__link">CHECKOUT</a>
+                                <a href="#" class="cart__link cart__link-color">GO TO CART</a>
                             </div>
-                            <a href="#" class="cart__link">CHECKOUT</a>
-                            <a href="#" class="cart__link cart__link-color">GO TO CART</a>
                         </div>
                     </div>
-                </div>
+                </a>
                 <a href="#" class="header__right-link">My Account</a>
             </div>
         </div>
@@ -432,7 +434,7 @@
 
     <main class="main__product">
         <div class="container">
-            <div class="product__catalog">
+            <div class="product__sidebar">
                 <details class="product__drop">
                     <summary>CATEGORY
                         <div class="main__sort sort__open">
@@ -491,6 +493,56 @@
                 </details>
             </div>
             <div class="product__section">
+                <form oninput="result.value=(range.value)" action="#">
+                    <div class="product__sort-up">
+                        <div class="trending">
+                            <h4 class="title">Trending now</h4>
+                            <span class="trending__text">Bohemian</span>
+                            <span class="l-style">|</span>
+                            <span class="trending__text">Floral</span>
+                            <span class="l-style">|</span>
+                            <span class="trending__text">Lace</span>
+                            <span class="trending__text">Floral</span>
+                            <span class="l-style">|</span>
+                            <span class="trending__text">Lace</span>
+                            <span class="l-style">|</span>
+                            <span class="trending__text">Bohemian</span>
+                        </div>
+                        <div class="size">
+                            <h4 class="title">Size</h4>
+                            <label for="XXS"><input type="checkbox" id="XXS">XXS</label>
+                            <label for="XS"><input type="checkbox" id="XS">XS</label>
+                            <label for="S"><input type="checkbox" id="S">S</label>
+                            <label for="M"><input type="checkbox" id="M">M</label>
+                            <label for="XXS"><input type="checkbox" id="XXS">L</label>
+                            <label for="XS"><input type="checkbox" id="XS">XL</label>
+                            <label for="S"><input type="checkbox" id="S">XXL</label>
+                        </div>
+                        <div class="price">
+                            <h4 class="title">PRICE</h4>
+                            <input type="range" id="range" step="1" value="52" min="0" max="400">
+                            <p><span>$<output name="result" for="range">52</output></span><span class="max-price">$400</span></p>
+                        </div>
+                    </div>
+                    <div class="product__sort-down">
+                        <div class="sort__drop">Sort By</div>
+                        <details class="drop-down">
+                            <summary>Name<i class="fas fa-chevron-down single__arrow"></i></summary>
+                            <div class="drop__size-menu">
+                                <span class="drop__size-text">Mango</span>
+                                <span class="drop__size-text">Mango</span>
+                            </div>
+                        </details>
+                        <div class="sort__drop">Show</div>
+                        <details class="drop-down">
+                            <summary>09<i class="fas fa-chevron-down single__arrow"></i></summary>
+                            <div class="drop__size-menu">
+                                <span class="drop__size-text">06</span>
+                                <span class="drop__size-text">03</span>
+                            </div>
+                        </details>
+                    </div>
+                </form>
                 <div class="product__cards">
                     <div class="card">
                         <div class="card__bg-hover">
@@ -608,6 +660,32 @@
             </div>
         </div>
     </main>
+
+    <div class="feature__product">
+        <div class="feature__advantages">
+            <div class="feature__item">
+                <div class="item__img">
+                    <img src="images/Forma1.png" alt="car" class="feature__img">
+                </div>
+                <h3 class="item__title">Free Delivery</h3>
+                <p class="item__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+            <div class="feature__item">
+                <div class="item__img">
+                    <img src="images/Forma2.png" alt="car" class="feature__img">
+                </div>
+                <h3 class="item__title item__title-middle">Sales & discounts</h3>
+                <p class="item__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+            <div class="feature__item">
+                <div class="item__img">
+                    <img src="images/Forma3.png" alt="car" class="feature__img">
+                </div>
+                <h3 class="item__title item__title-bottom">Quality assurance</h3>
+                <p class="item__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer__top">
