@@ -35,7 +35,10 @@ img {
 
 .header__right-link, .card__link-hover, .menu__list, .mega__link, 
 .card, .link, .span__hover, .middle__link, .icon__link, 
-.slider__arrow, .arrow {
+.slider__arrow, .arrow, .cart__link .cross__link, .main__link, 
+.pag__link, .pag__arrow-link, .pag-size, .pag__button, .single__link, 
+.drop__size-text, .card__bg-hover:hover,
+.card__bg-hover:hover .card__img, .card__title {
     transition: .2s;
 }
 
@@ -187,7 +190,6 @@ img {
 .header__cart:hover .mega__menu .mega__item .cross__link {
     margin-left: auto;
     font-size: 15px;
-    transition: .2s;
 }
 
 .header__cart:hover .mega__menu .mega__item .cross__link:hover i{
@@ -245,7 +247,6 @@ img {
     text-align: center;
     padding: 20px 0;
     margin-bottom: 11px;
-    transition: .2s;
     border: 1px solid #f16d7f;
     background-color: #fff;
     color: #f16d7f;
@@ -330,7 +331,7 @@ img {
 
 /* nav */
 .banner__nav {
-    height: 51px;
+    height: 50px;
     background-color: #fff;
 }
 
@@ -340,9 +341,7 @@ img {
 }
 
 .nav__menu {
-    height: 100%;
     display: flex;
-    list-style-type: none;
 }
 
 .menu__list {
@@ -367,7 +366,11 @@ img {
     display: block;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 17px 25px;
+    padding: 15px 25px;
+}
+
+.menu__link-man {
+    border-bottom: 3px solid #f16d7f;
 }
 
 /* mega__menu */
@@ -455,15 +458,11 @@ img {
 
 /* breadcrumb */
 .breadcrumb {
-    background-color: #fff;
-}
-
-.breadcrumb__header {
     height: 148px;
     background-color: #f8f3f4;
 }
 
-.breadcrumb__header .container {
+.breadcrumb .container, .main__product .container {
     height: 100%;
     display: flex;
     align-items: center;
@@ -497,7 +496,125 @@ img {
     content: '';
 }
 
-/* slider */
+/* main__product */
+.main__product {
+    padding: 59px 0 110px;
+    background-color: #fff;
+}
+
+.product__catalog {
+    width: 243px;
+    align-self: flex-start;
+}
+
+.product__drop {
+    font-weight: bold;
+    color: #ef5b70;
+    margin-bottom: 18px;
+}
+
+.product__drop summary {
+    padding: 9px 4px 11px 10px;
+    border-left: 5px solid #ef5b70;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.product__drop:last-of-type {
+    margin-bottom: 0;
+}
+
+.main__sort {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.sort__open, .product__drop[open] .sort__closed{
+    display: none;
+}
+
+.product__drop[open] .sort__open, .sort__closed {
+    display: block;
+}
+
+.product__drop[open] i {
+    color: #ef5b70;
+}
+
+.details__catalog {
+    display: none;
+}
+
+.product__drop[open] .details__catalog {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 0;
+}
+
+.main__link {
+    padding: 8px 0 8px 18px;
+    color: #6f6e6e;
+}
+
+.main__link:hover {
+    color: #ef5b70;
+}
+
+.product__section {
+    width: 846px;
+}
+
+/* pagination */
+.product__pagination {
+    padding-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pag__left {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ebebeb;
+}
+
+.pag-size {
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+.pag__arrow-link {
+    padding: 13px;
+}
+
+.pag__link {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    color: #c4c4c4;
+}
+
+.pag__link:hover, .pag__arrow-link:hover .pag-size{
+    color: #ef5b70;
+}
+
+.pag__button {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 44px;
+    border: 1px solid #ef5b70;
+    color: #ef5b70;
+}
+
+.pag__button:hover {
+    background-color: #ef5b70;
+    color: #fff;
+}
+
+/* section__slider */
+.section__slider {
+    background-color: #fff;
+}
+
 .slider {
     height: 777px;
     border: solid 1px #eaeaea;
@@ -657,12 +774,15 @@ img {
     list-style-type: none;
     position: relative;
     border: solid 1px #eaeaea;
-    padding: 12px 9px 12px 17px;
     font-size: 13px;
     color: #bcbcbc;
 }
 
 .drop-down summary {
+    padding: 11px 9px 12px 17px;
+}
+
+.drop-down summary, .product__drop summary {
     list-style-type: none;
     cursor: pointer;
     display: flex;
@@ -687,7 +807,6 @@ img {
     background-color: #ffffff;
     font-size: 16px;
     font-weight: 700;
-    transition: .2s;
     color: #ef5b70;
 }
 
@@ -721,7 +840,6 @@ img {
     cursor: pointer;
     padding: 12px 0 12px 17px;
     border-bottom: solid 1px #eaeaea;
-    transition: .2s;
 }
 
 .drop__size-text:hover {
@@ -829,13 +947,11 @@ img {
 
 .card__bg-hover:hover {
     background-color: #3a3838;
-    transition: .2s;
     position: relative;
 }
 
 .card__bg-hover:hover .card__img {
     opacity: .14;
-    transition: .2s;
 }
 
 .card__bg-hover:hover .card__link-hover {
@@ -863,7 +979,6 @@ img {
     display: block;
     font-size: 13px;
     font-weight: 700;
-    transition: .2s;
     padding: 17px 0 14px 15px;
     text-transform: uppercase;
 }
