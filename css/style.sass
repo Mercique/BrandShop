@@ -1,8 +1,18 @@
+$blackText: #222222
+$red: #f16d7f
+$redText: #ef5b70
+$white: #ffffff
+$colorBorder: #e6e6e6
+$colorLightBorder: #eaeaea
+$bgcBreadcrumb: #f8f3f4
+$colorProductText: #6f6e6e
+$colorSlider: #f7f7f7
+
 body
     font-family: 'Lato', sans-serif
     font-size: 14px
     font-weight: 400
-    color: #222222
+    color: $blackText
 
 *,
 *::before,
@@ -60,7 +70,7 @@ img
 
 .icon__word
     font-weight: 900
-    color: #f16d7f
+    color: $red
 
 .form
     display: flex
@@ -73,7 +83,7 @@ img
     align-items: flex-end
     cursor: pointer
     padding: 9px 6px 9px 15px
-    border: solid 1px #e6e6e6
+    border: solid 1px $colorBorder
     border-radius: 3px 0 0 3px
     border-right: none
     background-image: linear-gradient(to top, #f9f9f9, #f5f5f5)
@@ -112,7 +122,7 @@ img
 .input
     padding-left: 16px
     padding-right: 196px
-    border: solid 1px #e6e6e6
+    border: solid 1px $colorBorder
 
 ::placeholder
     color: #a4a4a4
@@ -120,8 +130,8 @@ img
 .header__button
     padding: 10px
     cursor: pointer
-    background-color: #fff
-    border: solid 1px #e6e6e6
+    background-color: $white
+    border: solid 1px $colorBorder
     border-radius: 0 3px 3px 0
     border-left: none
 
@@ -155,9 +165,10 @@ img
                 .cross__link
                     margin-left: auto
                     font-size: 15px
+                    color: #d8d8d8
                     &:hover
                         i
-                            color: #f16d7f
+                            color: $red
             .mega__text
                 display: flex
                 flex-direction: column
@@ -173,11 +184,11 @@ img
     font-size: 12px
     font-weight: 900
     text-transform: uppercase
-    color: #222222
+    color: $blackText
 
 .mega__price
     font-size: 12px
-    color: #f16d7f
+    color: $red
 
 .mega__box-price
     padding-top: 20px
@@ -190,7 +201,7 @@ img
 .mega__text-price
     font-size: 16px
     font-weight: 700
-    color: #222222
+    color: $blackText
 
 .cart__link
     display: block
@@ -199,21 +210,21 @@ img
     text-align: center
     padding: 20px 0
     margin-bottom: 11px
-    border: 1px solid #f16d7f
-    background-color: #fff
-    color: #f16d7f
+    border: 1px solid $red
+    background-color: $white
+    color: $red
     &:hover
-        background-color: #f16d7f
-        color: #fff
+        background-color: $red
+        color: $white
     &:last-of-type
         margin-bottom: 0
 
 .cart__link-color
-    border: 1px solid #eaeaea
+    border: 1px solid $colorLightBorder
     color: #4a4a4a
     &:hover
         background-color: #4a4a4a
-        color: #fff
+        color: $white
 
 .header__right-link
     display: block
@@ -222,15 +233,15 @@ img
     font-size: 15px
     font-weight: 400
     letter-spacing: 0.38px
-    background-color: #f16d7f
-    color: #fff
+    background-color: $red
+    color: $white
     &::after
         content: '\25BC'
         padding-left: 8px
     &:hover
-        border: 1px solid #f16d7f
-        color: #f16d7f
-        background-color: #fff
+        border: 1px solid $red
+        color: $red
+        background-color: $white
 
 /* banner */
 .banner
@@ -247,7 +258,7 @@ img
     width: 12px
     height: 90px
     margin-right: 12px
-    background-color: #f16d7f
+    background-color: $red
 
 .banner__title, .banner__text
     font-size: 40px
@@ -260,12 +271,12 @@ img
     line-height: 1
 
 .text__word
-    color: #f16d7f
+    color: $red
 
 /* nav */
 .banner__nav
     height: 50px
-    background-color: #fff
+    background-color: $white
 
 .nav__box
     display: flex
@@ -295,7 +306,7 @@ img
     padding: 15px 25px
 
 .menu__link-man
-    border-bottom: 3px solid #f16d7f
+    border-bottom: 3px solid $red
 
 /* mega__menu */
 .mega__menu
@@ -306,14 +317,14 @@ img
     padding: 14px 20px
     border: 1px solid #e8e8e8
     border-radius: 5px
-    background-color: #fff
+    background-color: $white
     box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16)
     &::before
         content: ''
         display: block
         width: 10px
         height: 10px
-        background-color: #fff
+        background-color: $white
         border-top: 1px solid #e8e8e8
         border-left: 1px solid #e8e8e8
         transform: rotate(45deg)
@@ -345,7 +356,7 @@ img
     letter-spacing: 0.35px
     color: #646464
     &:hover 
-        color: #f16d7f
+        color: $red
 
 .mega__link-img
     display: block
@@ -363,12 +374,12 @@ img
     font-size: 22px
     font-weight: 900
     letter-spacing: 0.55px
-    color: #ffffff
+    color: $white
 
 /* breadcrumb */
 .breadcrumb
     height: 148px
-    background-color: #f8f3f4
+    background-color: $bgcBreadcrumb
     .container
         height: 100%
         display: flex
@@ -377,7 +388,7 @@ img
         .breadcrumb__title
             font-size: 24px
             font-weight: 900
-            color: #f16d7f
+            color: $red
         .breadcrumb__tree
             .tree__link
                 font-weight: 300
@@ -389,14 +400,14 @@ img
                     margin-left: 3px
                 &:last-of-type
                     font-weight: bold
-                    color: #f16d7f
+                    color: $red
                 &:last-of-type::after
                     content: ''
 
 /* main__product */
 .main__product
     padding: 59px 0 110px
-    background-color: #fff
+    background-color: $white
     .container
         height: 100%
         display: flex
@@ -408,17 +419,17 @@ img
 
 .product__drop
     font-weight: bold
-    color: #6f6e6e
+    color: $colorProductText
     margin-bottom: 18px
     summary
         padding: 9px 4px 11px 10px
-        border-left: 5px solid #ef5b70
+        border-left: 5px solid $redText
         border-bottom: 1px solid #ebebeb
     &:last-of-type
         margin-bottom: 0
 
 .product__drop[open], .product__drop[open] i
-    color: #ef5b70
+    color: $redText
 
 .details__catalog
     display: none
@@ -430,9 +441,9 @@ img
 
 .main__link
     padding: 8px 0 8px 18px
-    color: #6f6e6e
+    color: $colorProductText
     &:hover 
-        color: #ef5b70
+        color: $redText
 
 .product__sort-up
     display: flex
@@ -442,15 +453,15 @@ img
         font-weight: bold
         margin-bottom: 13px
         text-transform: uppercase
-        color: #6f6e6e
+        color: $colorProductText
 
 .trending__text
     font-weight: 400
     line-height: 1.86
-    color: #6f6e6e
+    color: $colorProductText
     &:hover
         cursor: pointer
-        color: #ef5b70
+        color: $redText
 
 .l-style
     color: #dfdfdf
@@ -488,21 +499,21 @@ img
             display: flex
             align-items: center
             .sort__drop
-                color: #6f6e6e
+                color: $colorProductText
                 padding: 5px 9px 6px 11px
-                background-color: #fff
+                background-color: $white
                 border: 1px solid #ebebeb
                 border-right: none
                 &:last-of-type 
                     margin-left: 10px
             .drop-down
-                background-color: #fff
+                background-color: $white
                 summary
                     padding: 6px 9px 6px 11px
-                    color: #6f6e6e
+                    color: $colorProductText
                     .single__arrow
                         margin-left: 21px
-                        color: #6f6e6e
+                        color: $colorProductText
                 .drop__size-menu
                     top: 29px
                     width: 86px
@@ -525,32 +536,32 @@ img
                 color: #aaaaaa
             &:hover
                 .pag-size
-                    color: #ef5b70
+                    color: $redText
         .pag__link
             font-size: 16px
             font-weight: 700
             padding: 10px
             color: #c4c4c4
             &:hover
-                color: #ef5b70
+                color: $redText
     .pag__button
         display: block
         font-size: 16px
         font-weight: 700
         padding: 12px 44px
-        border: 1px solid #ef5b70
-        color: #ef5b70
+        border: 1px solid $redText
+        color: $redText
         &:hover 
-            background-color: #ef5b70
-            color: #fff
+            background-color: $redText
+            color: $white
 
 /* section__slider */
 .section__slider
-    background-color: #fff
+    background-color: $white
     .slider
         height: 777px
-        border: solid 1px #eaeaea
-        background-color: #f7f7f7
+        border: solid 1px $colorLightBorder
+        background-color: $colorSlider
         display: flex
         align-items: center
         justify-content: space-between
@@ -562,10 +573,10 @@ img
             align-items: center
             justify-content: center
             .arrow
-                color: #fff
+                color: $white
             &:hover
                 cursor: pointer
-                background-color: #fff
+                background-color: $white
                 border: 1px solid #d8d8d8
                 .arrow
                     color: #d8d8d8
@@ -574,15 +585,15 @@ img
             margin-top: 11px
     .product__single
         height: 730px
-        border: 1px solid #eaeaea
-        background-color: #fff
+        border: 1px solid $colorLightBorder
+        background-color: $white
         transform: translateY(-85px)
         display: flex
         flex-direction: column
         align-items: center
         .single__top
             width: 642px
-            border-bottom: 1px solid #eaeaea
+            border-bottom: 1px solid $colorLightBorder
             padding-top: 73px
             padding-bottom: 43px
             display: flex
@@ -593,15 +604,15 @@ img
                 text-transform: uppercase
                 padding-bottom: 15px
                 margin-bottom: 15px
-                border-bottom: 1px solid #eaeaea
-                color: #f16d7f
+                border-bottom: 1px solid $colorLightBorder
+                color: $red
                 position: relative
                 &::after
                     content: ''
                     display: block
                     width: 63px
                     height: 3px
-                    background-color: #ef5b70
+                    background-color: $redText
                     position: absolute
                     bottom: -2px
                     left: 54px
@@ -614,7 +625,8 @@ img
                 font-weight: 300
                 text-align: center
                 color: #5e5e5e
-                margin-top: 61px
+                margin-top: 54px
+                line-height: 1.8
             .single__material
                 width: 332px
                 display: flex
@@ -628,7 +640,7 @@ img
             .single__price
                 font-size: 24px
                 font-weight: bold
-                color: #ef5b70
+                color: $redText
         .single__bottom
             width: 537px
             padding-top: 63px
@@ -645,7 +657,7 @@ img
                             color: #2f2f2f
                         .single__input
                             width: 100%
-                            border: solid 1px #eaeaea
+                            border: solid 1px $colorLightBorder
                             padding: 12px 0 12px 17px
                             font-size: 13px
                             color: #bcbcbc
@@ -655,14 +667,14 @@ img
                     justify-content: center
                     padding: 16px 0
                     margin-top: 28px
-                    border: 1px solid #ef5b70
-                    background-color: #ffffff
+                    border: 1px solid $redText
+                    background-color: $white
                     font-size: 16px
                     font-weight: 700
-                    color: #ef5b70
+                    color: $redText
                     &:hover
-                        background-color: #ef5b70
-                        color: #fff
+                        background-color: $redText
+                        color: $white
                     .single__cart
                         color: inherit
                         margin-right: 15px
@@ -672,33 +684,33 @@ img
 .drop-down
     list-style-type: none
     position: relative
-    border: solid 1px #eaeaea
+    border: solid 1px $colorLightBorder
     font-size: 13px
     color: #bcbcbc
     summary
         padding: 11px 9px 12px 17px 
     .drop__box
         font-size: 12px
-        color: #ef5b70
+        color: $redText
         margin-right: 11px
     &[open]
         .single__arrow
-            color: #ef5b70
+            color: $redText
     .drop__size-menu
         width: 144px
         position: absolute
         top: 40px
         left: -1px
         z-index: 2
-        background-color: #fff
-        border: solid 1px #eaeaea
+        background-color: $white
+        border: solid 1px $colorLightBorder
         .drop__size-text
             display: block
             cursor: pointer
             padding: 12px 0 12px 17px
-            border-bottom: solid 1px #eaeaea
+            border-bottom: solid 1px $colorLightBorder
             &:hover 
-                color: #ef5b70
+                color: $redText
             &:last-of-type 
                 border: none
             .green
@@ -744,7 +756,7 @@ img
                 top: 26px
                 left: 0
                 padding: 16px 20px
-                background-color: #fff
+                background-color: $white
                 .top__text
                     font-size: 18px
                     font-weight: 900
@@ -753,7 +765,7 @@ img
                     .top__word
                         font-size: 30px
                         letter-spacing: 0.75px
-                        color: #f16d7f
+                        color: $red
 
 /* section__product */
 .section__product
@@ -796,8 +808,8 @@ img
                     position: absolute
                     top: 98px
                     left: 70px
-                    color: #ffffff
-                    border: solid 1px #ffffff
+                    color: $white
+                    border: solid 1px $white
                     font-size: 13px
                     font-weight: 700
                     .link__img
@@ -811,11 +823,11 @@ img
             padding: 17px 0 14px 15px
             text-transform: uppercase
             &:hover
-                color: #f16d7f
+                color: $red
         .card__text
             font-size: 16px
             font-weight: 700
-            color: #f16d7f
+            color: $red
             margin-left: 15px
             margin-bottom: 18px
             text-transform: uppercase
@@ -832,16 +844,16 @@ img
         font-weight: 700
         letter-spacing: 0.4px
         text-align: center
-        color: #ffffff
-        background-color: #f16d7f
+        color: $white
+        background-color: $red
         border: 1px solid transparent
         .product__arrow
             color: inherit
             margin-left: 10px
         &:hover
-            border: 1px solid #f16d7f
-            color: #f16d7f
-            background-color: #fff
+            border: 1px solid $red
+            color: $red
+            background-color: $white
 
 /* feature */
 .feature
@@ -861,14 +873,14 @@ img
                 font-weight: 700
                 letter-spacing: 0.8px
                 text-align: left
-                color: #ffffff
+                color: $white
 
 .text__size, .text__color
     font-size: 53.5px
     letter-spacing: 1.34px
 
 .text__color
-    color: #f16d7f
+    color: $red
 
 .feature__advantages
     display: flex
@@ -962,7 +974,7 @@ img
                         font-size: 16px
                         font-weight: 700
                         letter-spacing: 0.4px
-                        color: #f16d7f
+                        color: $red
                         .box__country
                             font-size: 12px
                             font-weight: 300
@@ -980,7 +992,7 @@ img
                                 margin-right: 0
                             &:hover
                                 cursor: pointer
-                                background-color: #f16d7f
+                                background-color: $red
             .box__right
                 width: 50%
                 display: flex
@@ -1009,8 +1021,8 @@ img
                         letter-spacing: 0.35px
                         text-align: center
                         transform: translateX(-3px)
-                        color: #ffffff
-                        background-color: #f16d7f
+                        color: $white
+                        background-color: $red
     &__middle
         padding-top: 109px
         display: flex
@@ -1035,7 +1047,7 @@ img
                 letter-spacing: 0.45px
                 margin-top: 7px
                 margin-bottom: 45px
-                color: #f16d7f
+                color: $red
             .item__list
                 .middle__list
                     margin-bottom: 22px
@@ -1046,10 +1058,10 @@ img
                         letter-spacing: 0.4px
                         color: #898989
                         &:hover
-                            color: #f16d7f
+                            color: $red
     &__bottom
         height: 79px
-        background-color: #e6e6e6
+        background-color: $colorBorder
         color: #7a7a7a
         .bottom__box
             height: 100%
@@ -1067,7 +1079,7 @@ img
                     display: flex
                     align-items: center
                     justify-content: center
-                    background-color: #fff
+                    background-color: $white
                     margin-right: 8px
                     .social-icon
                         font-size: 17px
@@ -1075,7 +1087,7 @@ img
                     &:last-of-type
                         margin-right: 0
                     &:hover
-                        background-color: #f16d7f
+                        background-color: $red
                     &:hover
                         .social-icon 
-                            color: #fff
+                            color: $white
