@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The BRAND</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/9c091d119b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,12 +23,8 @@
                 <form action="#" class="form">
                     <details class="details">
                         <summary class="summary">Browse
-                            <div class="sort">
-                                <i class="fas fa-caret-right"></i>
-                            </div>
-                            <div class="sort__click">
-                                <i class="fas fa-caret-down"></i>
-                            </div>
+                            <i class="fas fa-caret-right sort"></i>
+                            <i class="fas fa-caret-down sort__click"></i>
                         </summary>
                         <div class="mega__menu">
                             <div class="mega__item">
@@ -58,63 +57,59 @@
                 </form>
             </div>
             <div class="header__right">
-                <a href="#">
-                    <div class="header__cart">
+                <div class="header__cart">
+                    <a href="#" class="header__cart-link">
                         <img src="images/cart.png" alt="cart">
-                        <div class="mega__menu">
-                            <div class="mega__item">
-                                <a href="#">
-                                    <img src="images/cart-menu.jpg" alt="men">
+                    </a>
+                    <div class="mega__menu">
+                        <div class="mega__item">
+                            <a href="single.html" class="mega__item-link">
+                                <img src="images/cart-menu.jpg" alt="men">
+                            </a>
+                            <div class="mega__text">
+                                <a href="single.html" class="mega__title-link">
+                                    <h5 class="mega__header-title">Rebox Zane</h5>
                                 </a>
-                                <div class="mega__text">
-                                    <a href="#">
-                                        <h5 class="mega__header-title">Rebox Zane</h5>
-                                    </a>
-                                    <div class="mega__star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <span class="mega__price">1  x   $250</span>
+                                <div class="mega__star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
                                 </div>
-                                <a href="#" class="cross__link">
-                                    <i class="fas fa-times-circle"></i>
-                                </a>
+                                <span class="mega__price">1  x   $250</span>
                             </div>
-                            <div class="mega__item">
-                                <a href="#">
-                                    <img src="images/cart-menu2.jpg" alt="men">
-                                </a>
-                                <div class="mega__text">
-                                    <a href="#">
-                                        <h5 class="mega__header-title">Rebox Zane</h5>
-                                    </a>
-                                    <div class="mega__star">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <span class="mega__price">1  x   $250</span>
+                            <a href="#" class="cross__link">
+                                <i class="fas fa-times-circle"></i>
+                            </a>
+                        </div>
+                        <div class="mega__item">
+                            <img src="images/cart-menu2.jpg" alt="women">
+                            <div class="mega__text">
+                                <h5 class="mega__header-title">Rebox Zane</h5>
+                                <div class="mega__star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
                                 </div>
-                                <a href="#" class="cross__link">
-                                    <i class="fas fa-times-circle"></i>
-                                </a>
+                                <span class="mega__price">1  x   $250</span>
                             </div>
-                            <div class="mega__box-price">
-                                <div class="text__price">
-                                    <span class="mega__text-price">TOTAL</span>
-                                    <span class="mega__text-price">$500.00</span>
-                                </div>
-                                <a href="#" class="cart__link">CHECKOUT</a>
-                                <a href="#" class="cart__link cart__link-color">GO TO CART</a>
+                            <a href="#" class="cross__link">
+                                <i class="fas fa-times-circle"></i>
+                            </a>
+                        </div>
+                        <div class="mega__box-price">
+                            <div class="text__price">
+                                <span class="mega__text-price">TOTAL</span>
+                                <span class="mega__text-price">$500.00</span>
                             </div>
+                            <a href="#" class="cart__link">CHECKOUT</a>
+                            <a href="#" class="cart__link cart__link-color">GO TO CART</a>
                         </div>
                     </div>
-                </a>
+                </div>
                 <a href="#" class="header__right-link">My Account</a>
             </div>
         </div>
@@ -124,7 +119,7 @@
         <nav class="banner__nav">
             <div class="nav__box container">
                 <ul class="nav__menu">
-                    <li class="menu__list"><a href="#" class="menu__link">Home</a>
+                    <li class="menu__list"><a href="index.html" class="menu__link">Home</a>
                         <div class="mega__menu">
                             <div class="mega__item">
                                 <h3 class="mega__title">Women</h3>
@@ -430,7 +425,7 @@
         </div>
     </div>
 
-    <section class="section__category">
+    <div class="section__category">
         <div class="section__box container">
             <div class="category__box">
                 <div class="box">
@@ -469,7 +464,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="section__product container">
         <h2 class="product__title">Fetured Items</h2>
@@ -680,19 +675,19 @@
                 <p class="footer__copyright">© 2017  Brand  All Rights Reserved.</p>
                 <div class="footer__icons">
                     <a href="https://ru-ru.facebook.com/" target="_blank" class="icon__link">
-                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-facebook-f social-icon"></i>
                     </a>
                     <a href="https://twitter.com/" target="_blank" class="icon__link">
-                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-twitter social-icon"></i>
                     </a>
                     <a href="https://www.linkedin.cn/login" target="_blank" class="icon__link">
-                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-linkedin-in social-icon"></i>
                     </a>
                     <a href="https://www.pinterest.ru/" target="_blank" class="icon__link">
-                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-pinterest-p social-icon"></i>
                     </a>
                     <a href="https://accounts.google.com/" target="_blank" class="icon__link">
-                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fab fa-google-plus-g social-icon"></i>
                     </a>
                 </div>
             </div>
