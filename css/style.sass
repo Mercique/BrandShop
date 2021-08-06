@@ -12,6 +12,7 @@ body
     font-family: 'Lato', sans-serif
     font-size: 14px
     font-weight: 400
+    line-height: normal
     color: $blackText
 
 *,
@@ -28,8 +29,14 @@ body
 a
     text-decoration: none
     color: inherit
+    &:hover
+        color: inherit
+
+p
+    margin: 0
 
 ul, ol
+    padding: 0
     list-style-type: none
 
 img
@@ -120,15 +127,17 @@ img
     font-weight: 300
 
 .input
+    width: 280px
+    font-size: 14px
+    line-height: normal
     padding-left: 16px
-    padding-right: 196px
     border: solid 1px $colorBorder
 
 ::placeholder
     color: #a4a4a4
 
 .header__button
-    padding: 10px
+    padding: 9px 11px
     cursor: pointer
     background-color: $white
     border: solid 1px $colorBorder
@@ -313,7 +322,7 @@ img
     display: none
     position: absolute
     top: 43px
-    z-index: 2
+    z-index: 4
     padding: 14px 20px
     border: 1px solid #e8e8e8
     border-radius: 5px
@@ -450,8 +459,8 @@ img
     justify-content: space-between
     padding: 12px 0 35px
     .title
+        margin-bottom: 17px
         font-weight: bold
-        margin-bottom: 13px
         text-transform: uppercase
         color: $colorProductText
 
@@ -472,21 +481,57 @@ img
     .product__form
         .product__sort-up
             .trending
-                width: 176px
+                width: 280px
             .size
-                width: 236px
-                label
+                width: 280px
+                .custom-checkbox
                     display: inline-block
-                    width: 56px
-                    padding-top: 5px
-                    &:nth-last-child(3)
-                        padding-top: 9px
-                input
+                    width: 67px
+                .custom-checkbox>input
+                    position: absolute
+                    z-index: -1
+                    opacity: 0
+                .custom-checkbox>span
+                    display: inline-flex
+                    align-items: center
+                    user-select: none
+                    line-height: 1.8
+                    color: $colorProductText
+                .custom-checkbox>span::before
+                    content: ''
+                    display: inline-block
+                    width: 13px
+                    height: 13px
+                    border: 1px solid $colorBorder
                     margin-right: 9px
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-size: 81%
+                .custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before
+                    border-color: $red
+                .custom-checkbox>input:checked+span::before
+                    border-color: $red
+                    background-color: $red
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")
+                .custom-checkbox>input:disabled+span::before
+                    background-color: #e9ecef
             .price
                 width: 262px
-                input
+                input[type="range"]
+                    -webkit-appearance: none
                     width: 100%
+                    height: 6px
+                    background: -webkit-linear-gradient(left, #f16d7f 0%, #f16d7f 13%, #f0f0f0 13%, #f0f0f0 100%)
+                    border-radius: 3px
+                    outline: none
+                    cursor: pointer
+                input[type="range"]::-webkit-slider-thumb
+                    -webkit-appearance: none
+                    width: 14px
+                    height: 14px
+                    background-color: #f16d7f
+                    border-radius: 50%
+                    cursor: pointer
                 p
                     display: flex
                     padding-top: 12px
@@ -854,6 +899,40 @@ img
             border: 1px solid $red
             color: $red
             background-color: $white
+
+/* section__checkout*/
+.section__checkout
+    padding-top: 56px
+    padding-bottom: 93px
+    .accordion-item
+        border-color: #e8e8e8
+        border-left: none
+        border-right: none
+        &:first-of-type
+            border-top: none
+            border-radius: 0
+        &:last-of-type
+            border-radius: 0
+        .accordion-button
+            padding: 30px 0
+            font-family: Lato
+            font-size: 16px
+            font-weight: bold
+            font-stretch: normal
+            font-style: normal
+            line-height: normal
+            letter-spacing: normal
+            color: #222
+            &:first-of-type, &:last-of-type
+                border-radius: 0
+            &::after
+                display: none
+            &:focus
+                box-shadow: none
+            &:not(.collapsed)
+                color: inherit
+                background-color: $white
+                box-shadow: none
 
 /* feature */
 .feature

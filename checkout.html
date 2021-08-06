@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Checkout</title>
     <link rel="icon" href="images/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/9c091d119b.js" crossorigin="anonymous"></script>
 </head>
@@ -164,7 +165,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="menu__list"><a href="#" class="menu__link menu__link-man">Man</a>
+                <li class="menu__list"><a href="#" class="menu__link">Man</a>
                     <div class="mega__menu">
                         <div class="mega__item">
                             <h3 class="mega__title">Women</h3>
@@ -431,269 +432,87 @@
         </div>
     </div>
 
-    <main class="main__product">
+    <section class="section__checkout">
         <div class="container">
-            <div class="product__sidebar">
-                <details class="product__drop">
-                    <summary>CATEGORY
-                        <i class="fas fa-sort-up sort__click"></i>
-                        <i class="fas fa-sort-down sort"></i>
-                    </summary>
-                    <div class="details__catalog">
-                        <a href="#" class="main__link">Accessories</a>
-                        <a href="#" class="main__link">Bags</a>
-                        <a href="#" class="main__link">Denim</a>
-                        <a href="#" class="main__link">Hoodies & Sweatshirts</a>
-                        <a href="#" class="main__link">Jackets & Coats</a>
-                        <a href="#" class="main__link">Pants</a>
-                        <a href="#" class="main__link">Polos</a>
-                        <a href="#" class="main__link">Shirts</a>
-                        <a href="#" class="main__link">Shoes</a>
-                        <a href="#" class="main__link">Shorts</a>
-                        <a href="#" class="main__link">Sweaters & Knits</a>
-                        <a href="#" class="main__link">T-Shirts</a>
-                        <a href="#" class="main__link">Tanks</a>
-                    </div>
-                </details>
-
-                <details class="product__drop">
-                    <summary>BRAND
-                        <i class="fas fa-sort-up sort__click"></i>
-                        <i class="fas fa-sort-down sort"></i>
-                    </summary>
-                    <div class="details__catalog">
-                        <a href="#" class="main__link">Adidas</a>
-                        <a href="#" class="main__link">Nike</a>
-                        <a href="#" class="main__link">Mango</a>
-                    </div>
-                </details>
-                <details class="product__drop">
-                    <summary>DESIGNER
-                        <i class="fas fa-sort-up sort__click"></i>
-                        <i class="fas fa-sort-down sort"></i>
-                    </summary>
-                    <div class="details__catalog">
-                        <a href="#" class="main__link">Pokras Lampas</a>
-                        <a href="#" class="main__link">Raf Simons</a>
-                        <a href="#" class="main__link">Yohji Yamamoto</a>
-                    </div>
-                </details>
-            </div>
-            <div class="product__section">
-                <form class="product__form" oninput="result.value=(range.value)" action="#">
-                    <div class="product__sort-up">
-                        <div class="trending">
-                            <h4 class="title">Trending now</h4>
-                            <span class="trending__text">Bohemian</span>
-                            <span class="l-style">|</span>
-                            <span class="trending__text">Floral</span>
-                            <span class="l-style">|</span>
-                            <span class="trending__text">Lace</span><br>
-                            <span class="trending__text">Floral</span>
-                            <span class="l-style">|</span>
-                            <span class="trending__text">Lace</span>
-                            <span class="l-style">|</span>
-                            <span class="trending__text">Bohemian</span>
+            <div class="accordion .accordion-flush" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        01.   SHIPPING ADRESS
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <form class="accordion-form" action="#">
+                                <div class="form-left"></div>
+                                <div class="form-right"></div>
+                            </form>
                         </div>
-                        <div class="size">
-                            <h4 class="title">Size</h4>
-                            <label class="custom-checkbox">
-                                <input type="checkbox" value="XXS">
-                                <span>XXS</span>
-                            </label>
-                            <label class="custom-checkbox">
-                                <input type="checkbox" value="XS">
-                                <span>XS</span>
-                            </label>
-                            <label class="custom-checkbox">
-                                <input type="checkbox" value="S">
-                                <span>S</span>
-                            </label>
-                            <label class="custom-checkbox">
-                                <input type="checkbox" value="M">
-                                <span>M</span>
-                            </label>
-                            <label class="custom-checkbox">
-                                <input type="checkbox" value="L">
-                                <span>L</span>
-                            </label>
-                            <label class="custom-checkbox">
-                                <input type="checkbox" value="XL">
-                                <span>XL</span>
-                            </label>
-                            <label class="custom-checkbox">
-                                <input type="checkbox" value="XXL">
-                                <span>XXL</span>
-                            </label>
-                        </div>
-                        <div class="price">
-                            <h4 class="title">PRICE</h4>
-                            <input type="range" id="range" step="1" value="52" min="0" max="400">
-                            <p><span>$<output name="result" for="range">52</output></span><span class="max-price">$400</span></p>
-                        </div>
-                    </div>
-                    <div class="product__sort-down">
-                        <div class="sort__drop">Sort By</div>
-                        <details class="drop-down">
-                            <summary>Name<i class="fas fa-chevron-down single__arrow"></i></summary>
-                            <div class="drop__size-menu">
-                                <span class="drop__size-text">Mango</span>
-                                <span class="drop__size-text">Mango</span>
-                            </div>
-                        </details>
-                        <div class="sort__drop">Show</div>
-                        <details class="drop-down">
-                            <summary>09<i class="fas fa-chevron-down single__arrow"></i></summary>
-                            <div class="drop__size-menu">
-                                <span class="drop__size-text">06</span>
-                                <span class="drop__size-text">03</span>
-                            </div>
-                        </details>
-                    </div>
-                </form>
-                <div class="product__cards">
-                    <div class="card">
-                        <div class="card__bg-hover">
-                            <img src="images/maincard1.jpg" alt="men" class="card__img">
-                            <a href="#" class="card__link-hover">
-                                <img src="images/card-cart.png" alt="cart" class="link__img">
-                                <p class="link__text">Add to Cart</p>
-                            </a>
-                        </div>
-                        <a href="single.html" class="card__title">Mango  People  T-shirt</a>
-                        <p class="card__text">$52.00</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__bg-hover">
-                            <img src="images/maincard2.jpg" alt="men" class="card__img">
-                            <a href="#" class="card__link-hover">
-                                <img src="images/card-cart.png" alt="cart" class="link__img">
-                                <p class="link__text">Add to Cart</p>
-                            </a>
-                        </div>
-                        <a href="single.html" class="card__title">Mango  People  T-shirt</a>
-                        <p class="card__text">$52.00</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__bg-hover">
-                            <img src="images/card3.jpg" alt="men" class="card__img">
-                            <a href="#" class="card__link-hover">
-                                <img src="images/card-cart.png" alt="cart" class="link__img">
-                                <p class="link__text">Add to Cart</p>
-                            </a>
-                        </div>
-                        <a href="single.html" class="card__title">Mango  People  T-shirt</a>
-                        <p class="card__text">$52.00</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__bg-hover">
-                            <img src="images/maincard4.jpg" alt="men" class="card__img">
-                            <a href="#" class="card__link-hover">
-                                <img src="images/card-cart.png" alt="cart" class="link__img">
-                                <p class="link__text">Add to Cart</p>
-                            </a>
-                        </div>
-                        <a href="single.html" class="card__title">Mango  People  T-shirt</a>
-                        <p class="card__text">$52.00</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__bg-hover">
-                            <img src="images/card8.jpg" alt="men" class="card__img">
-                            <a href="#" class="card__link-hover">
-                                <img src="images/card-cart.png" alt="cart" class="link__img">
-                                <p class="link__text">Add to Cart</p>
-                            </a>
-                        </div>
-                        <a href="single.html" class="card__title">Mango  People  T-shirt</a>
-                        <p class="card__text">$52.00</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__bg-hover">
-                            <img src="images/maincard6.jpg" alt="men" class="card__img">
-                            <a href="#" class="card__link-hover">
-                                <img src="images/card-cart.png" alt="cart" class="link__img">
-                                <p class="link__text">Add to Cart</p>
-                            </a>
-                        </div>
-                        <a href="single.html" class="card__title">Mango  People  T-shirt</a>
-                        <p class="card__text">$52.00</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__bg-hover">
-                            <img src="images/card6.jpg" alt="men" class="card__img">
-                            <a href="#" class="card__link-hover">
-                                <img src="images/card-cart.png" alt="cart" class="link__img">
-                                <p class="link__text">Add to Cart</p>
-                            </a>
-                        </div>
-                        <a href="single.html" class="card__title">Mango  People  T-shirt</a>
-                        <p class="card__text">$52.00</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__bg-hover">
-                            <img src="images/maincard8.jpg" alt="men" class="card__img">
-                            <a href="#" class="card__link-hover">
-                                <img src="images/card-cart.png" alt="cart" class="link__img">
-                                <p class="link__text">Add to Cart</p>
-                            </a>
-                        </div>
-                        <a href="single.html" class="card__title">Mango  People  T-shirt</a>
-                        <p class="card__text">$52.00</p>
-                    </div>
-                    <div class="card">
-                        <div class="card__bg-hover">
-                            <img src="images/maincard9.jpg" alt="men" class="card__img">
-                            <a href="#" class="card__link-hover">
-                                <img src="images/card-cart.png" alt="cart" class="link__img">
-                                <p class="link__text">Add to Cart</p>
-                            </a>
-                        </div>
-                        <a href="single.html" class="card__title">Mango  People  T-shirt</a>
-                        <p class="card__text">$52.00</p>
                     </div>
                 </div>
-                <div class="product__pagination">
-                    <div class="pag__left">
-                        <a href="#" class="pag__arrow-link"><i class="fas fa-chevron-left pag-size"></i></a>
-                        <a href="#" class="pag__link">1</a>
-                        <a href="#" class="pag__link">2</a>
-                        <a href="#" class="pag__link">3</a>
-                        <a href="#" class="pag__link">4</a>
-                        <a href="#" class="pag__link">5</a>
-                        <a href="#" class="pag__link">6...20</a>
-                        <a href="#" class="pag__arrow-link"><i class="fas fa-chevron-right pag-size"></i></a>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        02.   BILLING INFORMATION
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae!
+                        </div>
                     </div>
-                    <a href="#" class="pag__button">View All</a>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        03.   SHIPPING INFORMATION
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        04.   SHIPPING METHOD
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        05.   PAYMENT METHOD
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        06.   ORDER REVIEW
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae!
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
-
-    <div class="feature__product">
-        <div class="feature__advantages">
-            <div class="feature__item">
-                <div class="item__img">
-                    <img src="images/Forma1.png" alt="car" class="feature__img">
-                </div>
-                <h3 class="item__title">Free Delivery</h3>
-                <p class="item__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
-            <div class="feature__item">
-                <div class="item__img">
-                    <img src="images/Forma2.png" alt="car" class="feature__img">
-                </div>
-                <h3 class="item__title item__title-middle">Sales & discounts</h3>
-                <p class="item__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
-            <div class="feature__item">
-                <div class="item__img">
-                    <img src="images/Forma3.png" alt="car" class="feature__img">
-                </div>
-                <h3 class="item__title item__title-bottom">Quality assurance</h3>
-                <p class="item__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <footer class="footer">
         <div class="footer__top">
@@ -784,5 +603,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
