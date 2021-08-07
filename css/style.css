@@ -18,6 +18,7 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0;
 }
 
 a {
@@ -47,7 +48,8 @@ img {
 .slider__arrow, .arrow, .cart__link, .cross__link, .main__link,
 .pag__link, .pag__arrow-link, .pag-size, .pag__button, .single__link,
 .drop__size-text, .card__bg-hover:hover, .trending__text,
-.card__bg-hover:hover .card__img, .card__title {
+.card__bg-hover:hover .card__img, .card__title, .accordion-form-link,
+.accordion-form-button, .form-forgot {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -1414,7 +1416,7 @@ img {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #222;
+  color: #222222;
 }
 
 .section__checkout .accordion-item .accordion-button:first-of-type, .section__checkout .accordion-item .accordion-button:last-of-type {
@@ -1435,6 +1437,168 @@ img {
   background-color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.section__checkout .accordion-body {
+  padding: 0 0 79px 35px;
+}
+
+.section__checkout .accordion-body .accordion-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section__checkout .accordion-body .accordion-form-text {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #222222;
+}
+
+.section__checkout .accordion-body .accordion-form .form-lowcolor-text {
+  font-size: 13px;
+  color: #b3b2b2;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left {
+  width: 50%;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left .custom-radio {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left .custom-radio:first-of-type {
+  margin-top: 28px;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left .custom-radio:last-of-type {
+  margin-bottom: 32px;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left .custom-radio .radio {
+  display: none;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left .custom-radio .text {
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  padding-left: 30px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left .custom-radio .text::before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left .custom-radio .text::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-radius: 50%;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left .custom-radio .radio:checked + .text::after {
+  opacity: 1;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left div {
+  padding: 22px 0 28px 0;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left div .accordion-form-link {
+  display: block;
+  line-height: 2;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left div .accordion-form-link:hover {
+  color: #f16d7f;
+}
+
+.section__checkout .accordion-body .accordion-form .form-left div .accordion-form-link i {
+  margin-right: 4px;
+}
+
+.section__checkout .accordion-body .accordion-form .accordion-form-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 180px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #4a4a4a;
+}
+
+.section__checkout .accordion-body .accordion-form .accordion-form-button:hover {
+  background-color: #4a4a4a;
+  color: #ffffff;
+}
+
+.section__checkout .accordion-body .accordion-form .form-right {
+  width: 50%;
+}
+
+.section__checkout .accordion-body .accordion-form .form-right .label-margin {
+  margin-top: 22px;
+}
+
+.section__checkout .accordion-body .accordion-form .form-right input {
+  width: 390px;
+  height: 45px;
+  margin: 16px 0 20px 0;
+  padding: 0 15px;
+  border: solid 1px #eaeaea;
+  background-color: #fff;
+}
+
+.section__checkout .accordion-body .accordion-form .form-right .color {
+  color: #ff0d0d;
+}
+
+.section__checkout .accordion-body .accordion-form .form-right-span {
+  display: block;
+  font-size: 13px;
+}
+
+.section__checkout .accordion-body .accordion-form .form-right .form-forgot {
+  margin-left: 32px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.section__checkout .accordion-body .accordion-form .form-right .form-forgot:hover {
+  color: #ff0d0d;
 }
 
 /* feature */

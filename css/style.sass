@@ -25,6 +25,7 @@ body
 .container
     max-width: 1140px
     margin: 0 auto
+    padding: 0
 
 a
     text-decoration: none
@@ -47,7 +48,8 @@ img
 .slider__arrow, .arrow, .cart__link, .cross__link, .main__link, 
 .pag__link, .pag__arrow-link, .pag-size, .pag__button, .single__link, 
 .drop__size-text, .card__bg-hover:hover, .trending__text,
-.card__bg-hover:hover .card__img, .card__title
+.card__bg-hover:hover .card__img, .card__title, .accordion-form-link,
+.accordion-form-button, .form-forgot
     transition: all .2s ease
 
 /* header */
@@ -922,7 +924,7 @@ img
             font-style: normal
             line-height: normal
             letter-spacing: normal
-            color: #222
+            color: $blackText
             &:first-of-type, &:last-of-type
                 border-radius: 0
             &::after
@@ -933,6 +935,107 @@ img
                 color: inherit
                 background-color: $white
                 box-shadow: none
+    .accordion-body
+        padding: 0 0 79px 35px
+        .accordion-form
+            display: flex
+            &-text
+                font-size: 13px
+                font-weight: 700
+                text-transform: uppercase
+                margin-bottom: 8px
+                color: $blackText
+            .form-lowcolor-text
+                font-size: 13px
+                color: #b3b2b2
+            .form-left
+                width: 50%
+                .custom-radio
+                    display: block
+                    margin-bottom: 16px
+                    &:first-of-type
+                        margin-top: 28px
+                    &:last-of-type
+                        margin-bottom: 32px
+                    .radio
+                        display: none
+                    .text
+                        position: relative
+                        font-size: 12px
+                        font-weight: 700
+                        padding-left: 30px
+                        text-transform: uppercase
+                        color: $blackText
+                        &::before
+                            content: ''
+                            display: block
+                            width: 14px
+                            height: 14px
+                            border: 2px solid #555
+                            position: absolute
+                            top: 0
+                            left: 0
+                            border-radius: 50%
+                        &::after
+                            content: ''
+                            display: block
+                            width: 6px
+                            height: 6px
+                            background-color: #000000
+                            position: absolute
+                            top: 4px
+                            left: 4px
+                            opacity: 0
+                            transition: .2s
+                            border-radius: 50%
+                    .radio:checked + .text::after
+                        opacity: 1
+                div
+                    padding: 22px 0 28px 0
+                    .accordion-form-link
+                        display: block
+                        line-height: 2
+                        &:hover
+                            color: $red
+                        i
+                            margin-right: 4px
+            .accordion-form-button
+                display: inline-flex
+                align-items: center
+                justify-content: center
+                width: 180px
+                height: 50px
+                font-size: 14px
+                font-weight: 700
+                text-transform: uppercase
+                border: 1px solid #eaeaea
+                background-color: $white
+                color: #4a4a4a
+                &:hover
+                    background-color: #4a4a4a
+                    color: $white
+            .form-right
+                width: 50%
+                .label-margin
+                    margin-top: 22px
+                input
+                    width: 390px
+                    height: 45px
+                    margin: 16px 0 20px 0
+                    padding: 0 15px
+                    border: solid 1px #eaeaea
+                    background-color: #fff
+                .color
+                    color: #ff0d0d
+                &-span
+                    display: block
+                    font-size: 13px
+                .form-forgot
+                    margin-left: 32px
+                    font-weight: 700
+                    color: $blackText
+                    &:hover
+                        color: #ff0d0d
 
 /* feature */
 .feature
