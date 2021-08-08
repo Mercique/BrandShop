@@ -45,11 +45,12 @@ img
 
 .header__right-link, .card__link-hover, .menu__list, .mega__link, 
 .card, .link, .span__hover, .middle__link, .icon__link, 
-.slider__arrow, .arrow, .cart__link, .cross__link, .main__link, 
+.slider__arrow, .arrow, .cart__link, .close, .main__link, 
 .pag__link, .pag__arrow-link, .pag-size, .pag__button, .single__link, 
 .drop__size-text, .card__bg-hover:hover, .trending__text,
 .card__bg-hover:hover .card__img, .card__title, .accordion-form-link,
-.accordion-form-button, .form-forgot
+.accordion-form-button, .form-forgot, .shopdetails__button, .check__button, 
+.shipping__button, .shipping-menu-item
     transition: all .2s ease
 
 /* header */
@@ -173,13 +174,13 @@ img
                 border-bottom: 1px solid #ededed
                 &:first-of-type
                     padding-top: 0
-                .cross__link
+                .close
                     margin-left: auto
                     font-size: 15px
                     color: #d8d8d8
                     &:hover
-                        i
-                            color: $red
+                        cursor: pointer
+                        color: $red
             .mega__text
                 display: flex
                 flex-direction: column
@@ -769,7 +770,7 @@ img
     list-style-type: none
     cursor: pointer
     display: flex
-    align-items: flex-start
+    align-items: center
 
 .single__arrow
     font-size: 11px
@@ -1024,7 +1025,7 @@ img
                     margin: 16px 0 20px 0
                     padding: 0 15px
                     border: solid 1px #eaeaea
-                    background-color: #fff
+                    background-color: $white
                 .color
                     color: #ff0d0d
                 &-span
@@ -1036,6 +1037,190 @@ img
                     color: $blackText
                     &:hover
                         color: #ff0d0d
+
+/* section__shopping-cart */
+.section__shopping-cart
+    padding: 90px 0 79px 0
+    .shopping-cart
+        .product__details
+            display: flex
+            justify-content: space-between
+            padding: 17px 0
+            &-row
+                width: 625px
+                display: flex
+                justify-content: space-between
+        .shopdetails__card
+            display: flex
+            justify-content: space-between
+            padding: 25px 0
+            margin-bottom: -1px
+            border-top: 1px solid $colorLightBorder
+            border-bottom: 1px solid $colorLightBorder
+            .shopdetails__card-left
+                display: flex
+                .img__card-text
+                    padding: 10px 0 0 21px
+            .shopdetails__card-right
+                width: 625px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 0 18px
+                span
+                    color: #656565
+                    font-weight: 700
+                .close
+                    color:#c0c0c0
+                    &:hover
+                        cursor: pointer
+                        color: $red
+                .shopdetails__input
+                    width: 54px
+                    height: 30px
+                    text-align: center
+                    padding-top: 1px
+                    border: 1px solid $colorLightBorder
+                    &[type="number"]::-webkit-outer-spin-button, 
+                    &[type="number"]::-webkit-inner-spin-button
+                        -webkit-appearance: none
+        .details__text
+            font-size: 13px
+            font-weight: 700
+            letter-spacing: -0.2px
+            text-transform: uppercase
+            color: $blackText
+            .details__text-style
+                font-weight: 300
+                text-transform: capitalize
+                color: $colorProductText
+                margin-left: 7px
+        .style
+            display: block
+            text-transform: capitalize
+            line-height: 1.54
+            &-margin
+                margin-top: 30px
+        .shopdetails__card-button
+            display: flex
+            justify-content: space-between
+            padding: 44px 0 63px
+            .shopdetails__button
+                cursor: pointer
+                padding: 16px 37px
+                text-transform: uppercase
+                font-weight: 700
+                color: #4a4a4a
+                background-color: $white
+                border: 1px solid $colorLightBorder
+                &:hover
+                    color: $white
+                    background-color: #4a4a4a
+    .shopping-proceed-to-check
+        display: flex
+        justify-content: space-between
+        .title
+            font-size: 16px
+            font-weight: 700
+            color: $blackText
+            text-transform: uppercase
+        .shipping-box
+            width: 355px
+            .title-margin
+                margin-bottom: 20px
+            .shipping__details
+                position: relative
+                .shipping__summary
+                    display: flex
+                    align-items: center
+                    cursor: pointer
+                    .shipping-arrow
+                        margin-left: auto
+                        padding-bottom: 5px
+                .shipping-drop-menu
+                    display: none
+                &[open]
+                    .shipping-drop-menu
+                        display: block
+                        background-color: $white
+                        border: 1px solid $colorLightBorder
+                        position: absolute
+                        top: 45px
+                        left: 0
+                        .shipping-menu-item
+                            display: flex
+                            align-items: center
+                            width: 353px
+                            height: 45px
+                            color: #b1b1b1
+                            padding: 0 17px
+                            cursor: pointer
+                            border-bottom: 1px solid $colorLightBorder
+                            &:hover
+                                color: $red
+                            &:last-of-type
+                                border-bottom: none
+            .shipping__text
+                font-size: 14px
+                font-weight: 300
+                color: #000000
+                margin-top: 21px
+                margin-bottom: 23px
+            .shipping__input
+                width: 100%
+                height: 45px
+                color: #b1b1b1
+                padding: 0 17px
+                margin-bottom: 23px
+                border: 1px solid $colorLightBorder
+            .input__number
+                &[type="number"]::-webkit-outer-spin-button, 
+                &[type="number"]::-webkit-inner-spin-button
+                    -webkit-appearance: none
+            .shipping__button
+                font-size: 11px
+                font-weight: 700
+                color: #4a4a4a
+                cursor: pointer
+                padding: 12px 15px
+                text-transform: uppercase
+                background-color: $white
+                border: 1px solid $colorLightBorder
+                &:hover
+                    color: $white
+                    background-color: #4a4a4a
+        .proceed-to-check
+            width: 360px
+            height: 214px
+            padding: 40px 43px 42px
+            text-align: right
+            background-color: #f5f3f3
+            .check-text
+                font-size: 11px
+                color: #4a4a4a
+                span
+                    margin-left: 19px
+            .title
+                padding-top: 6px
+                padding-bottom: 22px
+                margin-bottom: 17px
+                border-bottom: 1px solid #e2e2e2
+                span
+                    margin-left: 18px
+                    color: $red
+            .check__button
+                width: 100%
+                padding: 18px 0
+                font-size: 16px
+                font-weight: 700
+                border: 1px solid $red
+                text-transform: uppercase
+                cursor: pointer
+                color: $white
+                background-color: $red
+                &:hover
+                    color: $red
+                    background-color: $white
 
 /* feature */
 .feature
