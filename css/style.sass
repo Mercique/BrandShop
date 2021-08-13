@@ -43,11 +43,10 @@ ul, ol
 img
     display: block
 
-.header__right-link, .card__link-hover, .menu__list, .mega__link, 
-.card, .link, .span__hover, .middle__link, .icon__link, 
-.slider__arrow, .arrow, .cart__link, .close, .main__link, 
-.pag__link, .pag__arrow-link, .pag-size, .pag__button, .single__link, 
-.drop__size-text, .card__bg-hover:hover, .trending__text,
+.header__right-link, .card__link-hover, .menu__list, .mega__link, .card, 
+.link, .middle__link, .icon__link, .slider__arrow, .arrow, .cart__link, 
+.close, .main__link, .pag__link, .pag__arrow-link, .pag-size, .pag__button, 
+.single__link, .drop__size-text, .card__bg-hover:hover, .trending__text,
 .card__bg-hover:hover .card__img, .card__title, .accordion-form-link,
 .accordion-form-button, .form-forgot, .shopdetails__button, .check__button, 
 .shipping__button, .shipping-menu-item
@@ -953,6 +952,7 @@ img
                 width: 50%
                 .custom-radio
                     display: block
+                    cursor: pointer
                     margin-bottom: 16px
                     &:first-of-type
                         margin-top: 28px
@@ -1338,6 +1338,7 @@ img
                         margin-bottom: 7px
                         color: #222224
                     .box__author
+                        display: block
                         font-size: 16px
                         font-weight: 700
                         letter-spacing: 0.4px
@@ -1347,19 +1348,25 @@ img
                             font-weight: 300
                             letter-spacing: 0.3px
                             color: #222224
-                    .box__span
+                    .review__swap
                         display: flex
-                        margin-top: 31px
-                        .span__hover
-                            width: 38px
-                            height: 4px
-                            margin-right: 13px
-                            background-color: #d6d6d6
+                        .review__label
+                            cursor: pointer
+                            padding: 13px 7px
+                            margin-top: 19px
+                            &:first-of-type
+                                padding-left: 0
                             &:last-of-type
-                                margin-right: 0
-                            &:hover
-                                cursor: pointer
-                                background-color: $red
+                                padding-right: 0
+                            .review__input
+                                display: none
+                                &:checked + .span__switch
+                                    background-color: $red
+                            .span__switch
+                                display: block
+                                width: 38px
+                                height: 4px
+                                background-color: #d6d6d6
             .box__right
                 width: 50%
                 display: flex
