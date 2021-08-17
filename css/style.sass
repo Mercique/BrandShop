@@ -29,16 +29,19 @@ a
     &:hover
         color: inherit
 
-p {margin: 0}
+p
+    margin: 0
 
 ul, ol
     margin: 0
     padding: 0
     list-style-type: none
 
-img {display: block}
+img
+    display: block
 
-input {outline: none}
+input
+    outline: none
 
 .center
     padding-left: calc(50% - 570px)
@@ -323,7 +326,7 @@ input {outline: none}
     top: 43px
     z-index: 4
     padding: 14px 20px
-    border: 1px solid #e8e8e8
+    border: 1px solid $colorBanner
     border-radius: 5px
     background-color: $white
     box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16)
@@ -333,8 +336,8 @@ input {outline: none}
         width: 10px
         height: 10px
         background-color: $white
-        border-top: 1px solid #e8e8e8
-        border-left: 1px solid #e8e8e8
+        border-top: 1px solid $colorBanner
+        border-left: 1px solid $colorBanner
         transform: rotate(45deg)
         position: absolute
         top: -6px
@@ -351,7 +354,7 @@ input {outline: none}
 .mega__title
     width: 235px
     text-transform: uppercase
-    border-bottom: 1px solid #e8e8e8
+    border-bottom: 1px solid $colorBanner
     padding-bottom: 8px
     margin-bottom: 7px
     font-size: 14px
@@ -526,7 +529,7 @@ input {outline: none}
                     -webkit-appearance: none
                     width: 14px
                     height: 14px
-                    background-color: #f16d7f
+                    background-color: $red
                     border-radius: 50%
                     cursor: pointer
                 p
@@ -901,7 +904,7 @@ input {outline: none}
     padding-top: 56px
     padding-bottom: 93px
     .accordion-item
-        border-color: #e8e8e8
+        border-color: $colorBanner
         border-left: none
         border-right: none
         &:first-of-type
